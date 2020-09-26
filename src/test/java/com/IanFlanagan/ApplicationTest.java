@@ -32,7 +32,7 @@ public class ApplicationTest {
             throw new RuntimeException("Major Issue");
         } catch (Exception e) {
 
-            for (int i=0;i<=100; i++ ) {
+            for (int i=0;i<=150; i++ ) {
 
                 rollbar.log("Hello, Rollbar this is message number: " +i+ " in case you were wondering");
                 rollbar.critical(e, " Critical error: " +i+ " now");
